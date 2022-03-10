@@ -1,0 +1,32 @@
+{
+  "name": "200-NFTs",
+  "version": "1.2.0",
+  "main": "index.js",
+  "bin": "index.js",
+  "pkg": {
+    "assets": [
+      "layers/**/*",
+      "node_modules/**/*",
+      "src/**/*"
+    ]
+  },
+  "scripts": {
+    "build": "node index.js",
+    "generate": "node index.js",
+    "rarity": "node utils/rarity.js",
+    "rarity_md": "node utils/getRarity_fromMetadata.js",
+    "rarity_rank": "node utils/rarity_rank.js",
+    "preview": "node utils/preview.js",
+    "pixelate": "node utils/pixelate.js",
+    "update_info": "node utils/update_info.js",
+    "preview_gif": "node utils/preview_gif.js"
+  },
+  "author": "harindulk",
+  "dependencies": {
+    "canvas": "^2.8.0",
+    "form-data": "^4.0.0",
+    "gif-encoder-2": "^1.0.5",
+    "node-fetch": "^2.6.6",
+    "sha1": "^1.1.1"
+  }
+}
